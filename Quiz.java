@@ -32,6 +32,7 @@ public class Quiz {
         String answerTwo = scanner.nextLine();
         System.out.println
         ("3. ¿Quién fue Hedwig Eva Maria Kiesler, conocida como Hedy Lamarr?\n" + //
+        "Hay dos respuesta correctas. Escribe las dos respuestas seperados por tabulador.\n" + //
                         "                a. Primera programadora de software\n" + //
                         "                b. Una actriz de cine\n" + //
                         "                c. Inventora del procesador de datos\n" + //
@@ -53,7 +54,7 @@ public class Quiz {
             score += 5;
         }
         if(answersThree.length == 2 &&
-            ((answersThree[0].equals("b") && answersThree[1].equals("d")))){
+            ((answersThree[0].equals("b") && answersThree[1].equals("d")) || (answersThree[0].equals("d") && answersThree[1].equals("b")))){
             score += 5;
             }
         if(answerFour.equals("a")){

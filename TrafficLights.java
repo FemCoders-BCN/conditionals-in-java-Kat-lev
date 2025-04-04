@@ -1,17 +1,17 @@
 public class TrafficLights {
     public static void main(String[] args) {
-        // String colour = "verde";
+        String colour = "verde";
         // String colour = "amarillo";
         // String colour = "rojo";
-        String colour = "rosa";
+        // String colour = "rosa";
 
-        if (colour == "verde") {
+        if (colour.equals ("verde")) {
             System.out.println("Puedes seguir");
         }
-        else if (colour == "amarillo") {
+        else if (colour.equals("amarillo")) {
             System.out.println("Ten cuidado");
         }
-        else if (colour == "rojo") {
+        else if (colour.equals("rojo")) {
             System.out.println("¡¡¡Para!!!");
         }
         else {
